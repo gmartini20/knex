@@ -69,6 +69,7 @@ require('../interface')(SchemaBuilder);
 addQueryContext(SchemaBuilder);
 
 SchemaBuilder.prototype.withSchema = function(schemaName) {
+  console.log('knex schemaName', schemaName);
   this._schema = schemaName;
   return this;
 };
